@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JSON | Titanium Mobile</title>
+    <meta name="description" content="Native iOS-, Android- and Windows Apps with JavaScript">
+    <link rel="icon" href="/titanium-vuepress-docs/favicon.ico">
+    
+    <link rel="preload" href="/titanium-vuepress-docs/assets/css/0.styles.78075959.css" as="style"><link rel="preload" href="/titanium-vuepress-docs/assets/js/app.04438d5f.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/18.127aab69.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/1.e535ee15.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/23.d9536ed3.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/10.f0a0eb75.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/3.99584a35.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/8.56bc014d.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/5.4e2b86d0.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/11.82ec4dd2.js" as="script"><link rel="preload" href="/titanium-vuepress-docs/assets/js/17.da118221.js" as="script"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/12.e25ca7e2.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/13.ffcaa40f.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/14.d248bf1e.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/15.1e4ff989.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/16.812b5c5d.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/19.41455ff7.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/20.ca6fc33e.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/21.3c4e9035.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/22.737b292d.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/24.bc8abdce.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/25.ccabbeb3.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/26.55af5a24.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/27.8f19da66.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/28.2df5cce4.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/29.1bef62af.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/30.f5821f48.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/31.d881c09a.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/32.fa9be6dc.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/33.d336461b.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/34.8af58550.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/35.8784bc38.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/36.33cbdc8e.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/4.7f04d8d5.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/6.a0df2faa.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/7.154e8439.js"><link rel="prefetch" href="/titanium-vuepress-docs/assets/js/9.dfd32ed9.js">
+    <link rel="stylesheet" href="/titanium-vuepress-docs/assets/css/0.styles.78075959.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/titanium-vuepress-docs/" class="home-link router-link-active"><img src="/titanium-vuepress-docs/titanium-logo.png" alt="Titanium Mobile" class="logo"> <span class="site-name can-hide">Titanium Mobile</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/titanium-vuepress-docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/titanium-vuepress-docs/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/titanium-vuepress-docs/api/" class="nav-link router-link-active">API</a></div> <a href="https://github.com/appcelerator/titanium_mobile" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/titanium-vuepress-docs/" class="nav-link">Home</a></div><div class="nav-item"><a href="/titanium-vuepress-docs/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/titanium-vuepress-docs/api/" class="nav-link router-link-active">API</a></div> <a href="https://github.com/appcelerator/titanium_mobile" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>JSON</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/titanium-vuepress-docs/api/global/json.html#methods" class="sidebar-link">Methods</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/titanium-vuepress-docs/api/global/json.html#parse" class="sidebar-link">parse</a></li><li class="sidebar-sub-header"><a href="/titanium-vuepress-docs/api/global/json.html#stringify" class="sidebar-link">stringify</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content default"><div class="breadcrumb"><ul><li><a href="/titanium-vuepress-docs/api/">API</a></li><li><a href="/titanium-vuepress-docs/api/global.html">Global APIs</a></li><li><a href="/titanium-vuepress-docs/api/global/json.html">JSON</a></li></ul></div> <h1 id="json"><a href="#json" aria-hidden="true" class="header-anchor">#</a> JSON</h1> <div class="proxy-summary"><div class="summary"><p><p>Global JSON object providing the <a href="/titanium-vuepress-docs/api/global/json.html#parse">parse</a> and <a href="/titanium-vuepress-docs/api/global/json.html#stringify">stringify</a> methods.</p>
+</p></div> <div><div class="proxy-meta availability"><div class="proxy-meta-name">Availability</div> <ul><li><img src="/titanium-vuepress-docs/android-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/apple-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/apple-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/windows-logo.png" class="platform-logo"> <span>4.1.0</span></li></ul></div> <div class="proxy-meta"><div class="proxy-meta-name">
+        Extends
+      </div> <div class="proxy-meta-value"><a href="/titanium-vuepress-docs/api/object.html">Object</a></div></div></div></div> <!----> <div class="member-list method-list"><h2 id="methods"><a href="#methods" class="header-anchor">#</a> Methods
+  </h2> <div class="member-header"><h3 id="parse"><a href="#parse" class="header-anchor">#</a> parse <!----></h3> <div class="proxy-meta availability"><div class="proxy-meta-name">Availability</div> <ul><li><img src="/titanium-vuepress-docs/android-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/apple-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/apple-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/windows-logo.png" class="platform-logo"> <span>4.1.0</span></li></ul></div></div> <p summary="&lt;p&gt;Parses a JSON text to produce an object or array.&lt;/p&gt;
+" description="&lt;p&gt;The &lt;code&gt;parse&lt;/code&gt; method throws a SyntaxError exception if the text cannot be parsed.&lt;/p&gt;
+&lt;p&gt;The optional reviver parameter is a function that can filter and
+transform the results. It receives each of the keys and values,
+and its return value is used instead of the original value.
+If it returns what it received, then the structure is not modified.
+If it returns undefined then the member is deleted.&lt;/p&gt;
+" filename="Global.JSON.parse-method" platforms="[object Object],[object Object],[object Object],[object Object]" examples="&lt;h4 id=&quot;examples&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#examples&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt; Examples&lt;/h4&gt;
+&lt;h5 id=&quot;parse-with-reviver-function&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#parse-with-reviver-function&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt; Parse with Reviver Function&lt;/h5&gt;
+&lt;p&gt;The following example parses the text, converting  values that look like ISO date strings into Date objects.
+myData = JSON.parse(text, function (key, value) { var a; if (typeof value === 'string') { a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2})😦\d{2})😦\d{2}(?:\.\d*)?)Z$/.exec(value); if (a) { return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6])); } } return value; });&lt;/p&gt;
+" class="function-signature"><!----> <span>parse(text, reviver)</span> <span class="return-type">→ Object</span></p> <!----> <p><p>Parses a JSON text to produce an object or array.</p>
+</p> <p><p>The <code>parse</code> method throws a SyntaxError exception if the text cannot be parsed.</p>
+<p>The optional reviver parameter is a function that can filter and
+transform the results. It receives each of the keys and values,
+and its return value is used instead of the original value.
+If it returns what it received, then the structure is not modified.
+If it returns undefined then the member is deleted.</p>
+</p> <h4>Parameters</h4> <table class="parameter-table"><thead><tr><th>Name</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>text</td> <td><code>String</code></td> <td>JSON text to parse.</td></tr><tr><td>reviver</td> <td><code>Callback</code></td> <td>Function to filter and transform the results.</td></tr></tbody></table> <h4>Returns</h4> <p>Type: <code>Object</code></p> <hr><div class="member-header"><h3 id="stringify"><a href="#stringify" class="header-anchor">#</a> stringify <!----></h3> <div class="proxy-meta availability"><div class="proxy-meta-name">Availability</div> <ul><li><img src="/titanium-vuepress-docs/android-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/apple-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/apple-logo.png" class="platform-logo"> <span>0.8</span></li><li><img src="/titanium-vuepress-docs/windows-logo.png" class="platform-logo"> <span>4.1.0</span></li></ul></div></div> <p summary="&lt;p&gt;Produces a JSON text from a JavaScript value.&lt;/p&gt;
+" description="&lt;p&gt;When an object value is found, if the object contains a toJSON
+method, its toJSON method is called and the result is
+stringified. A toJSON method does not serialize: it returns the
+value represented by the name/value pair that should be serialized,
+or undefined if nothing should be serialized. The toJSON method
+is passed the key associated with the value, and &lt;code&gt;this&lt;/code&gt; is
+bound to the value.&lt;/p&gt;
+&lt;p&gt;For example, this would serialize Dates as ISO strings.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Date.prototype.toJSON = function (key) {
+    function f(n) {
+        // Format integers to have at least two digits.
+        return n &amp;lt; 10 ? '0' + n : n;
+    }
+
+    return this.getUTCFullYear()   + '-' +
+         f(this.getUTCMonth() + 1) + '-' +
+         f(this.getUTCDate())      + 'T' +
+         f(this.getUTCHours())     + ':' +
+         f(this.getUTCMinutes())   + ':' +
+         f(this.getUTCSeconds())   + 'Z';
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can provide an optional replacer function. It is passed the
+key and value of each member, with &lt;code&gt;this&lt;/code&gt; bound to the containing
+object. The value that is returned from your function is
+serialized. If your function returns undefined, then the member will
+be excluded from the serialization.&lt;/p&gt;
+&lt;p&gt;If the replacer parameter is an array of strings, then it is
+used to select the members to be serialized. It filters the results
+such that only members with keys listed in the replacer array are
+stringified.&lt;/p&gt;
+&lt;p&gt;Values that do not have JSON representations, such as undefined or
+functions, will not be serialized. Such values in objects are
+dropped; in arrays they are replaced with null. You can use
+a replacer function to replace those with JSON values.&lt;/p&gt;
+&lt;p&gt;JSON.stringify(undefined) returns undefined.&lt;/p&gt;
+&lt;p&gt;The optional space parameter produces a stringification of the
+value that is filled with line breaks and indentation to make it
+easier to read.&lt;/p&gt;
+&lt;p&gt;If the space parameter is a non-empty string, then that string is
+used for indentation. If the space parameter is a number, then
+each level is indented by the specified number of spaces.&lt;/p&gt;
+" filename="Global.JSON.stringify-method" platforms="[object Object],[object Object],[object Object],[object Object]" examples="&lt;h4 id=&quot;examples&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#examples&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt; Examples&lt;/h4&gt;
+&lt;h5 id=&quot;formatting-with-a-replacer-function&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#formatting-with-a-replacer-function&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt; Formatting with a Replacer Function&lt;/h5&gt;
+&lt;p&gt;The following example produces a readable version of a Titanium event object,
+omitting the &lt;code&gt;source&lt;/code&gt; and &lt;code&gt;type&lt;/code&gt; properties and adding whitespace for readability:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;JSON.stringify(evt, function(key, value) {
+    if(key === 'source' || key === 'type') {
+        return undefined;
+    } else {
+        return value;
+    }
+}, 2));
+&lt;/code&gt;&lt;/pre&gt;
+" class="function-signature"><!----> <span>stringify(value, replacer, space)</span> <span class="return-type">→ String</span></p> <!----> <p><p>Produces a JSON text from a JavaScript value.</p>
+</p> <p><p>When an object value is found, if the object contains a toJSON
+method, its toJSON method is called and the result is
+stringified. A toJSON method does not serialize: it returns the
+value represented by the name/value pair that should be serialized,
+or undefined if nothing should be serialized. The toJSON method
+is passed the key associated with the value, and <code>this</code> is
+bound to the value.</p>
+<p>For example, this would serialize Dates as ISO strings.</p>
+<pre><code>Date.prototype.toJSON = function (key) {
+    function f(n) {
+        // Format integers to have at least two digits.
+        return n &lt; 10 ? '0' + n : n;
+    }
+
+    return this.getUTCFullYear()   + '-' +
+         f(this.getUTCMonth() + 1) + '-' +
+         f(this.getUTCDate())      + 'T' +
+         f(this.getUTCHours())     + ':' +
+         f(this.getUTCMinutes())   + ':' +
+         f(this.getUTCSeconds())   + 'Z';
+};
+</code></pre>
+<p>You can provide an optional replacer function. It is passed the
+key and value of each member, with <code>this</code> bound to the containing
+object. The value that is returned from your function is
+serialized. If your function returns undefined, then the member will
+be excluded from the serialization.</p>
+<p>If the replacer parameter is an array of strings, then it is
+used to select the members to be serialized. It filters the results
+such that only members with keys listed in the replacer array are
+stringified.</p>
+<p>Values that do not have JSON representations, such as undefined or
+functions, will not be serialized. Such values in objects are
+dropped; in arrays they are replaced with null. You can use
+a replacer function to replace those with JSON values.</p>
+<p>JSON.stringify(undefined) returns undefined.</p>
+<p>The optional space parameter produces a stringification of the
+value that is filled with line breaks and indentation to make it
+easier to read.</p>
+<p>If the space parameter is a non-empty string, then that string is
+used for indentation. If the space parameter is a number, then
+each level is indented by the specified number of spaces.</p>
+</p> <h4>Parameters</h4> <table class="parameter-table"><thead><tr><th>Name</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>value</td> <td><code>Object</code></td> <td>Any JavaScript value, usually an object or array.</td></tr><tr><td>replacer</td> <td><code>Callback | Array&lt;String&gt;</code></td> <td>Determines how object values are stringified for objects. See main text for usage.
+</td></tr><tr><td>space</td> <td><code>Number | String</code></td> <td>Specifies how nested structures are indented. If it is a number, it specifies the number of spaces to indent at each level. If it is a string (such as '\\t' or '&amp;amp;nbsp;'), it specifies the characters used to indent at each level.</td></tr></tbody></table> <h4>Returns</h4> <p>Type: <code>String</code></p> <hr></div></div> <!----> <!----> </div></div><div class="global-ui"><!----></div></div>
+    <script>window.__INITIAL_STATE__={"metadata":{"Global.JSON":{"name":"Global.JSON","summary":"\u003Cp\u003EGlobal JSON object providing the \u003Ca href=\"\u002Ftitanium-vuepress-docs\u002Fapi\u002Fglobal\u002Fjson.html#parse\"\u003Eparse\u003C\u002Fa\u003E and \u003Ca href=\"\u002Ftitanium-vuepress-docs\u002Fapi\u002Fglobal\u002Fjson.html#stringify\"\u003Estringify\u003C\u002Fa\u003E methods.\u003C\u002Fp\u003E\n","deprecated":null,"events":[],"examples":[],"methods":[{"name":"parse","deprecated":null,"summary":"\u003Cp\u003EParses a JSON text to produce an object or array.\u003C\u002Fp\u003E\n","description":"\u003Cp\u003EThe \u003Ccode\u003Eparse\u003C\u002Fcode\u003E method throws a SyntaxError exception if the text cannot be parsed.\u003C\u002Fp\u003E\n\u003Cp\u003EThe optional reviver parameter is a function that can filter and\ntransform the results. It receives each of the keys and values,\nand its return value is used instead of the original value.\nIf it returns what it received, then the structure is not modified.\nIf it returns undefined then the member is deleted.\u003C\u002Fp\u003E\n","filename":"Global.JSON.parse-method","platforms":[{"pretty_name":"Android","since":"0.8","name":"android"},{"pretty_name":"iPhone","since":"0.8","name":"iphone"},{"pretty_name":"iPad","since":"0.8","name":"ipad"},{"pretty_name":"Windows","since":"4.1.0","name":"windowsphone"}],"inherits":null,"examples":"\u003Ch4 id=\"examples\"\u003E\u003Ca class=\"header-anchor\" href=\"#examples\" aria-hidden=\"true\"\u003E#\u003C\u002Fa\u003E Examples\u003C\u002Fh4\u003E\n\u003Ch5 id=\"parse-with-reviver-function\"\u003E\u003Ca class=\"header-anchor\" href=\"#parse-with-reviver-function\" aria-hidden=\"true\"\u003E#\u003C\u002Fa\u003E Parse with Reviver Function\u003C\u002Fh5\u003E\n\u003Cp\u003EThe following example parses the text, converting  values that look like ISO date strings into Date objects.\nmyData = JSON.parse(text, function (key, value) { var a; if (typeof value === 'string') { a = \u002F^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2})😦\\d{2})😦\\d{2}(?:\\.\\d*)?)Z$\u002F.exec(value); if (a) { return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6])); } } return value; });\u003C\u002Fp\u003E\n","parameters":[{"name":"text","deprecated":null,"summary":"JSON text to parse.","description":null,"type":"String","optional":false,"filename":"Global.JSON.parse-method.text-param"},{"name":"reviver","deprecated":null,"summary":"Function to filter and transform the results.","description":null,"type":"Callback","optional":false,"filename":"Global.JSON.parse-method.reviver-param"}],"returns":{"type":"Object"}},{"name":"stringify","deprecated":null,"summary":"\u003Cp\u003EProduces a JSON text from a JavaScript value.\u003C\u002Fp\u003E\n","description":"\u003Cp\u003EWhen an object value is found, if the object contains a toJSON\nmethod, its toJSON method is called and the result is\nstringified. A toJSON method does not serialize: it returns the\nvalue represented by the name\u002Fvalue pair that should be serialized,\nor undefined if nothing should be serialized. The toJSON method\nis passed the key associated with the value, and \u003Ccode\u003Ethis\u003C\u002Fcode\u003E is\nbound to the value.\u003C\u002Fp\u003E\n\u003Cp\u003EFor example, this would serialize Dates as ISO strings.\u003C\u002Fp\u003E\n\u003Cpre\u003E\u003Ccode\u003EDate.prototype.toJSON = function (key) {\n    function f(n) {\n        \u002F\u002F Format integers to have at least two digits.\n        return n &lt; 10 ? '0' + n : n;\n    }\n\n    return this.getUTCFullYear()   + '-' +\n         f(this.getUTCMonth() + 1) + '-' +\n         f(this.getUTCDate())      + 'T' +\n         f(this.getUTCHours())     + ':' +\n         f(this.getUTCMinutes())   + ':' +\n         f(this.getUTCSeconds())   + 'Z';\n};\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EYou can provide an optional replacer function. It is passed the\nkey and value of each member, with \u003Ccode\u003Ethis\u003C\u002Fcode\u003E bound to the containing\nobject. The value that is returned from your function is\nserialized. If your function returns undefined, then the member will\nbe excluded from the serialization.\u003C\u002Fp\u003E\n\u003Cp\u003EIf the replacer parameter is an array of strings, then it is\nused to select the members to be serialized. It filters the results\nsuch that only members with keys listed in the replacer array are\nstringified.\u003C\u002Fp\u003E\n\u003Cp\u003EValues that do not have JSON representations, such as undefined or\nfunctions, will not be serialized. Such values in objects are\ndropped; in arrays they are replaced with null. You can use\na replacer function to replace those with JSON values.\u003C\u002Fp\u003E\n\u003Cp\u003EJSON.stringify(undefined) returns undefined.\u003C\u002Fp\u003E\n\u003Cp\u003EThe optional space parameter produces a stringification of the\nvalue that is filled with line breaks and indentation to make it\neasier to read.\u003C\u002Fp\u003E\n\u003Cp\u003EIf the space parameter is a non-empty string, then that string is\nused for indentation. If the space parameter is a number, then\neach level is indented by the specified number of spaces.\u003C\u002Fp\u003E\n","filename":"Global.JSON.stringify-method","platforms":[{"pretty_name":"Android","since":"0.8","name":"android"},{"pretty_name":"iPhone","since":"0.8","name":"iphone"},{"pretty_name":"iPad","since":"0.8","name":"ipad"},{"pretty_name":"Windows","since":"4.1.0","name":"windowsphone"}],"inherits":null,"examples":"\u003Ch4 id=\"examples\"\u003E\u003Ca class=\"header-anchor\" href=\"#examples\" aria-hidden=\"true\"\u003E#\u003C\u002Fa\u003E Examples\u003C\u002Fh4\u003E\n\u003Ch5 id=\"formatting-with-a-replacer-function\"\u003E\u003Ca class=\"header-anchor\" href=\"#formatting-with-a-replacer-function\" aria-hidden=\"true\"\u003E#\u003C\u002Fa\u003E Formatting with a Replacer Function\u003C\u002Fh5\u003E\n\u003Cp\u003EThe following example produces a readable version of a Titanium event object,\nomitting the \u003Ccode\u003Esource\u003C\u002Fcode\u003E and \u003Ccode\u003Etype\u003C\u002Fcode\u003E properties and adding whitespace for readability:\u003C\u002Fp\u003E\n\u003Cpre\u003E\u003Ccode\u003EJSON.stringify(evt, function(key, value) {\n    if(key === 'source' || key === 'type') {\n        return undefined;\n    } else {\n        return value;\n    }\n}, 2));\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n","parameters":[{"name":"value","deprecated":null,"summary":"Any JavaScript value, usually an object or array.","description":null,"type":"Object","optional":false,"filename":"Global.JSON.stringify-method.value-param"},{"name":"replacer","deprecated":null,"summary":"Determines how object values are stringified for objects. See main text for usage.\n","description":null,"type":["Callback","Array\u003CString\u003E"],"optional":true,"filename":"Global.JSON.stringify-method.replacer-param"},{"name":"space","deprecated":null,"summary":"Specifies how nested structures are indented. If it is a number, it specifies the number of spaces to indent at each level. If it is a string (such as '\\\\t' or '&amp;nbsp;'), it specifies the characters used to indent at each level.","description":null,"type":["Number","String"],"optional":true,"filename":"Global.JSON.stringify-method.space-param"}],"returns":{"type":"String"}}],"extends":"Object","properties":[],"platforms":[{"pretty_name":"Android","since":"0.8","name":"android"},{"pretty_name":"iPhone","since":"0.8","name":"iphone"},{"pretty_name":"iPad","since":"0.8","name":"ipad"},{"pretty_name":"Windows","since":"4.1.0","name":"windowsphone"}],"filename":null,"type":"module","subtype":null,"constants":[]}}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script>
+    <script src="/titanium-vuepress-docs/assets/js/18.127aab69.js" defer></script><script src="/titanium-vuepress-docs/assets/js/1.e535ee15.js" defer></script><script src="/titanium-vuepress-docs/assets/js/23.d9536ed3.js" defer></script><script src="/titanium-vuepress-docs/assets/js/10.f0a0eb75.js" defer></script><script src="/titanium-vuepress-docs/assets/js/3.99584a35.js" defer></script><script src="/titanium-vuepress-docs/assets/js/8.56bc014d.js" defer></script><script src="/titanium-vuepress-docs/assets/js/5.4e2b86d0.js" defer></script><script src="/titanium-vuepress-docs/assets/js/11.82ec4dd2.js" defer></script><script src="/titanium-vuepress-docs/assets/js/17.da118221.js" defer></script><script src="/titanium-vuepress-docs/assets/js/app.04438d5f.js" defer></script>
+  </body>
+</html>
